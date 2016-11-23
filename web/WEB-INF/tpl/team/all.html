@@ -3,11 +3,11 @@
 <div class="form-inline" role="form">
 	<div class="form-group">
 		<input type="text" value="${query!}" class="form-control" id="query"
-			placeholder="name">
+			placeholder="名称">
 	</div>
 	<button type="button" onclick="query_team();" class="btn btn-primary">搜索</button>
 	<div class="pull-right">
-		<a class="btn btn-primary" href="/team/create">创建Team</a>
+		<a class="btn btn-primary" href="/team/create">创建团队</a>
 	</div>
 </div>
 
@@ -37,7 +37,7 @@
 	<#include "../common/_paginate.html" /> <@paginate
 	currentPage=page.pageNumber totalPage=page.totalPage
 	actionUrl="/team/all/" urlParas="?q="+query/>
-	<div class="gray">数据按照组名排序，故而最新添加的不一定在最上面：）</div>
+	<div class="gray">数据按照组名排序，故而最新添加的不一定在最上面！</div>
 
 </div>
 
